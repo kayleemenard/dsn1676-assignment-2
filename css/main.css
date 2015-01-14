@@ -30,13 +30,24 @@ html {
 
   background-image: url(../images/clock-face.svg);
   background-position: center;
+  transform: rotate(0);
+}
+
+.clock-face:hover .hand-hour {
+  transform: rotate(360deg);
+}
+
+.clock-face:hover .hand-minute {
+  transform: rotate(4320deg);
 }
 
 .hand {
   left: calc(50% - 7px);
-  bottom: calc(50% - 7px);
+  bottom: 50%;
   position: absolute;
   width: 14px;
+  transition: all 6s linear;
+  transform-origin: bottom ;
 }
 
 .center {
