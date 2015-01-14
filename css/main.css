@@ -46,6 +46,7 @@ html {
   bottom: 50%;
   position: absolute;
   width: 14px;
+
   transition: all 6s linear;
   transform-origin: bottom ;
 }
@@ -71,16 +72,17 @@ html {
 
   background-color: green;
   border-radius: 50%;
+  transition: all 500ms linear;
 
   color: white;
   font-family: 'Gill Sans', sans-serif;
   line-height: 4em;
   text-decoration: none;
-  transition: all 500ms linear;
 }
 
 .forward:hover {
   background-color: white;
+  
   color: black;
 }
 
@@ -92,26 +94,16 @@ html {
 
   background-color: red;
   border-radius: 50%;
+  transition: all 500ms linear;
 
   color: white;
   font-family: 'Gill Sans', sans-serif;
   line-height: 4em;
-  opacity: 1;
   text-decoration: none;
-  transition: all 500ms linear;
 }
 
 .backward:hover {
   background-color: white;
+
   color: black;
-
 }
-
-
-
-
-
-
-
-
-
