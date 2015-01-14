@@ -33,11 +33,11 @@ html {
   transform: rotate(0);
 }
 
-.clock-face:hover .hand-hour {
+.clock-face:target .hand-hour {
   transform: rotate(360deg);
 }
 
-.clock-face:hover .hand-minute {
+.clock-face:target .hand-minute {
   transform: rotate(4320deg);
 }
 
@@ -56,5 +56,62 @@ html {
   bottom: calc(50% - 14px);
   width: 28px;
 }
+
+.main {
+  padding: 3em;
+
+  text-align: center;
+}
+
+.forward {
+  display: inline-block;
+  margin: 1em;
+  padding: 1em;
+  width: 6em;
+
+  background-color: green;
+  border-radius: 50%;
+
+  color: white;
+  font-family: 'Gill Sans', sans-serif;
+  line-height: 4em;
+  text-decoration: none;
+  transition: all 500ms linear;
+}
+
+.forward:hover {
+  background-color: white;
+  color: black;
+}
+
+.backward {
+  display: inline-block;
+  margin: 1em;
+  padding: 1em;
+  width: 6em;
+
+  background-color: red;
+  border-radius: 50%;
+
+  color: white;
+  font-family: 'Gill Sans', sans-serif;
+  line-height: 4em;
+  opacity: 1;
+  text-decoration: none;
+  transition: all 500ms linear;
+}
+
+.backward:hover {
+  background-color: white;
+  color: black;
+
+}
+
+
+
+
+
+
+
 
 
